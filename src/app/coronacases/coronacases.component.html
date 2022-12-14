@@ -1,0 +1,61 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-lg-12 col-md-12 col-xl-12 col-xxl-12">
+
+
+            <table class="table">
+                <thead>
+                  <tr >
+                    <th scope="col">date</th>
+                    <th scope="col">states</th>
+                    <th scope="col">positive</th>
+                    <th scope="col">negative</th>
+                
+                    <th scope="col">hospitalizedCurrently</th>  
+                    <th scope="col">death</th>  
+                 
+
+                
+                    <th scope="col">deathIncrease</th>  
+             
+                    <th scope="col">negativeIncrease</th>  
+                    <th scope="col">positiveIncrease</th>  
+                    <th scope="col">totalTestResultsIncrease</th>  
+                  
+
+ 
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of corona">
+                    <th scope="row">{{i.date}}</th>
+                    <td>{{i.states}}</td>
+                    <td> {{i.positive}}</td>
+                    <td> {{i.negative}}</td>
+                   
+                    <td>{{i.hospitalizedCurrently}}</td>
+                    <td>{{i.death}}</td>
+                    
+
+                  
+                    <td>{{i.deathIncrease}}</td>
+                
+                    <td>{{i.negativeIncrease}}</td>
+                    <td>{{i.positiveIncrease}}</td>
+                    <td>{{i.totalTestResultsIncrease}}</td>
+               
+
+                  
+
+                  </tr>
+                 
+                </tbody>
+              </table>
+
+
+        </div>
+    </div>
+</div>
